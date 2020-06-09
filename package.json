@@ -5,6 +5,11 @@
   "repository": "https://github.com/RubenOAlvarado/graphqltypescript-template.git",
   "author": "RubenOAlvarado <rubenosmaralvarado@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.$NODE_ENV.js",
+    "start": "node dist/server",
+    "start:env": "node --require dotenv/config dist/server"
+  },
   "dependencies": {
     "apollo-server": "^2.14.3",
     "graphql": "^15.1.0",
